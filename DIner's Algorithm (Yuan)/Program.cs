@@ -7,6 +7,8 @@ namespace Diner_s_Algorithm_Yuan_
     {
         static void Main()
         {
+            // ----- Important Variables -----
+            
             Random rnd = new Random(); // Random number generator for simulating eating and resting durations
 
             int[] dinerState = { 0, 0, 0, 0, 0 }; // 0 = waiting, 1 = resting, 2 = eating
