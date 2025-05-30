@@ -42,7 +42,8 @@ namespace Diner_s_Algorithm_Yuan_
 
                     leftFork = i; // Diner i's left fork
 
-                    rightFork = (i + 1) % dinerState.Length; // Diner i's right fork ( the formula ensures it wraps around since the table is circular)
+                    rightFork = (i + 1) % dinerState.Length; // Diner i's is the right fork (that's why we plus it by 1)
+                                                             // then using modulo (%) ensures that the last diner’s right fork wraps around to the first fork (index 0), modeling a circular table.
 
                     if (dinerState[i] == 1) // Resting
                     {
